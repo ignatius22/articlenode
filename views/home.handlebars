@@ -1,0 +1,8 @@
+<h1 class="container mt-4" style="font-family: fantacy; ">{{title}}</h1>
+<div class="container-fluid" style="width: 500px;">
+<ul class="list-group list-group-flush">
+    {{#each articles}}
+    <a href="/article/{{_id}}"  class="list-group-item list-group-item-action active"><li class="list-group-item" style="color: black;">{{this.title}}</li></a>
+    {{/each}}
+</ul>
+</div>

@@ -1,0 +1,12 @@
+<div class="card text-white bg-success mb-3 mt-4" style="max-width: 540px; color:black; ">
+<div class="card-header">{{title}}</div>
+ <div class="card-body">
+    {{# article}}
+    <h1 class="card-title">{{this.title}}</h1>
+    <h5 class="card-title">written by {{this.author}}</h5>
+    <p class="card-text">{{this.body}}</p>
+    <hr class="my-4">
+    <a href="/edit/{{_id}}" class="btn btn-primary">Edit</a>
+    {{/ article}}
+</div>
+</div>
